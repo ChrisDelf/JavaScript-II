@@ -1,6 +1,15 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+var theNumber = "not a number"
+
+function callTheNumber () {
+
+  return theNumber + " but it is"
+}
+
+console.log(callTheNumber());
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
