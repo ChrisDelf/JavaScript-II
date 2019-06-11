@@ -458,7 +458,10 @@ const runners = [
 // ==== Challenge 1: Use .forEach() ====
 // The event director needs both the first and last names of each runner for their running bibs.
 // Combine both the first and last names into a new array called fullName.
+console.log("Array Challenge 1");
+
 let fullName = [];
+
 runners.forEach(function(firstLast) {
   fullName.push(firstLast.first_name + ' ' + firstLast.last_name);
 });
@@ -468,6 +471,10 @@ console.log(fullName);
 // ==== Challenge 2: Use .map() ====
 // The event director needs to have all the runner's first names converted to uppercase
 // because the director BECAME DRUNK WITH POWER. Convert each first name into all caps and log the result
+console.log("Array Challenge 2");
+
+
+
 let allCaps = [];
 
 runners.map(function(capName) {
@@ -478,6 +485,8 @@ console.log(allCaps);
 // ==== Challenge 3: Use .filter() ====
 // The large shirts won't be available for the event due to an ordering issue.
 //Get a list of runners with large sized shirts so they can choose a different size. Return an array named largeShirts that contains information about the runners that have a shirt size of L and log the result
+console.log("Array Challenge 3");
+
 let largeShirts = [];
 
 runners.filter(function(items) {
@@ -490,6 +499,8 @@ console.log(largeShirts);
 
 // ==== Challenge 4: Use .reduce() ====
 // The donations need to be tallied up and reported for tax purposes. Add up all the donations into a ticketPriceTotal array and log the result
+console.log("Array Challenge 4");
+
 let ticketPriceTotal = [];
 
 ticketPriceTotal = runners.reduce(function(total, items)
@@ -510,7 +521,7 @@ console.log(ticketPriceTotal);
 // Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1 - list companies
-
+console.log("Array Challenge 5");
 
 let company = [];
 runners.forEach(function(firstLast) {
@@ -541,8 +552,6 @@ let donations = [];
   runners.forEach(function(items) {
   donations.push(items.donation);
   });
-
-console.log(donations);
 
 donaMax = function(arr) {
   return Math.max.apply(Math , arr);

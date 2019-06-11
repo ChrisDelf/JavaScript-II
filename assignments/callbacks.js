@@ -27,6 +27,8 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 
 
+console.log("callBack Challenge 1");
+
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
@@ -38,6 +40,10 @@ getLength(items, function(length) {
   console.log(length)
 });
 
+
+
+console.log("callBack Challenge 2");
+
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
 
@@ -47,6 +53,9 @@ last(items, function(lastIndex) {
 
   console.log(lastIndex)
 });
+
+
+console.log("callBack Challenge 3");
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
@@ -62,6 +71,8 @@ function add( x, y) {
 console.log(sumNums(4, 5 , add));
 
 
+console.log("callBack Challenge 4");
+
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
 
@@ -75,6 +86,8 @@ function multi(x , y) {
 
 console.log(multiplyNums( 4, 5, multi));
 
+
+console.log("callBack Challenge 5");
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
@@ -98,3 +111,6 @@ function removeDuplicates(array, cb) {
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
 }
+
+
+
