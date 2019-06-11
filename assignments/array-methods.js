@@ -536,19 +536,17 @@ console.log(lastEmail);
 
 // Problem 3 - Largest Donation
 
-let largest = [];
+let donations = [];
 
-largest = runners.reduce(function(items)
+  runners.forEach(function(items) {
+  donations.push(items.donation);
+  });
 
-{
+console.log(donations);
 
-  return Math.max(items.donation)
-
-
-} , 0 );
-
-
-console.log(largest);
+donaMax = function(arr) {
+  return Math.max.apply(Math , arr);
+};
 
 
-
+console.log(donaMax(donations));
